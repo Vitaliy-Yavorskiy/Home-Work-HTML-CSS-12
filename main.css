@@ -1,0 +1,397 @@
+@font-face {
+    font-family: "Bold";
+    src: url(./font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url(./font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Light";
+    src: url(./font/Roboto-Light.ttf);
+}
+
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/Bitmap.svg);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: drop-shadow(2px -4px 6px black);
+}
+
+
+.header-top {
+    color: white;
+    margin-bottom: 150px;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+}
+
+.logo p {
+    font-family: 'Bold';
+    font-size: 20px;
+    margin: 0;
+}
+
+.log {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Regular";
+    font-size: 14px;
+}
+
+.log button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+    border-color: whitesmoke;
+    color: white;
+}
+
+.bord {
+    border: none;
+    margin-right: 10px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+.a p {
+    font-family: 'Bold';
+    font-size: 52px;
+    margin: 0;
+}
+
+.a p.bot {
+    margin-bottom: 30px;
+}
+
+.b {
+    font-family: "Light";
+    font-size: 24PX;
+    color: #F7F3F2;
+    margin-bottom: 30px;
+}
+
+.c button {
+    background-color: #FF4E50;
+    color: white;
+    font-family: "Bold";
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+/* dream */
+
+h1 {
+    font-family: 'Bold';
+    font-size: 26px;
+    text-align: center;
+    padding: 40px 0 15px;
+}
+
+.dream {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 400px;
+    grid-gap: 20px;
+}
+
+.step {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.step1 {
+    background-image: url(./images/Step-1-image.svg);
+}
+
+.step2 {
+    background-image: url(./images/Step-2-image.svg);
+}
+
+.step3 {
+    background-image: url(./images/Step-3-image.svg);
+}
+
+.bottom {
+    margin: 0 20px;
+}
+
+.bottom button {
+    background-color: #FF4E50;
+    color: white;
+    font-family: "Regular";
+    font-size: 10px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+.big {
+    font-family: "Bold";
+    font-size: 24PX;
+    color: white;
+}
+
+.min {
+    font-family: "Light";
+    font-size: 14px;
+    color: rgba(240, 239, 239, 0.582);
+}
+
+.step2 .bottom {
+    align-self: center;
+}
+
+.partner-wrapper {
+    text-align: center;
+}
+
+.partner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.name {
+    font-family: "Bold";
+    font-size: 14px;
+    color: rgba(68, 68, 68, 1);
+    margin-top: 17px;
+}
+
+.info {
+    font-family: "Light";
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+    margin-top: 12px;
+}
+
+button {
+    background-color: white;
+    color: rgba(255, 78, 80, 1);
+    border-color: rgba(255, 78, 80, 1);
+    border-radius: 30px;
+    font-family: 'Bold';
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
+.foto-wrapper {
+    display: grid;
+    grid-template-areas:
+        "t1 t2 t3"
+        "t4 t5 t5 "
+        "t6 t6 t7 "
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.foto {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: rgb(247, 229, 229);
+    min-height: 310px;
+    font-family: "Bold";
+    font-size: 22px;
+    border-radius: 3px;
+    white-space: pre-line;
+}
+
+.foto1 {
+    grid-area: t1;
+    background: url(./images/foto1.svg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.foto2 {
+    grid-area: t2;
+    background: url(./images/foto2.svg) no-repeat;
+    background-size: cover;
+
+}
+
+.foto3 {
+    grid-area: t3;
+    background: url(./images/foto3.svg) no-repeat;
+    background-size: cover;
+}
+
+.foto4 {
+    grid-area: t4;
+    background: url(./images/foto4.svg) no-repeat;
+    background-size: cover;
+}
+
+.foto5 {
+    grid-area: t5;
+    background: url(./images/foto5.svg) no-repeat;
+    background-size: cover;
+}
+
+.foto6 {
+    grid-area: t6;
+    background: url(./images/foto6.svg) no-repeat;
+    background-size: cover;
+}
+
+.foto7 {
+    grid-area: t7;
+    background: url(./images/foto7.svg) no-repeat;
+    background-size: cover;
+}
+
+
+.search-wrapper {
+    text-align: center;
+}
+
+.search-text {
+    font-family: "Light";
+    font-size: 18px;
+    color: rgba(102, 102, 102, 1);
+    margin-top: 50px;
+}
+
+.search {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+}
+
+input {
+    margin-right: 10px;
+}
+   
+    
+.search-wrapper button {
+    background-color: rgba(255, 78, 80, 1);
+    color: white;
+}
+
+.logo-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.share {
+    font-family: "Regular";
+    color: rgba(255, 78, 80, 1);
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.bold,
+.by {
+    font-family: 'Bold';
+}
+
+.by,
+a {
+    font-size: 10px;
+    color: rgba(204, 204, 204, 1);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo-end {
+    margin-left: 80px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        justify-content: center;
+    }
+   
+
+    .dream {
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .step{
+        width: 70%;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .partner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search{
+        display: grid;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 382px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .partner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search{
+        display: flex;
+        width: 150px;
+    }
+
+    .foto-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input{
+        margin-bottom: 15px;
+    }
+
+    .logo-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
